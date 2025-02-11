@@ -13,6 +13,7 @@ module.exports = function overrideDev(config) {
     open: true,
   };
 
+
   config.plugins.push(
     new webpack.DefinePlugin({
       "process.env.STEAM_API_KEY": JSON.stringify(process.env.STEAM_API_KEY),
