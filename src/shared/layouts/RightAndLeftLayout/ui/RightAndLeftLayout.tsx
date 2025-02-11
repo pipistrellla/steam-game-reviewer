@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 
-import { classNames } from 'src/shared/lib/helpers/ClassNames/ClassNames';
+import { classNames } from '@/shared/lib/helpers/ClassNames/ClassNames';
 
 import cls from './RightAndLeftLayout.module.scss';
 

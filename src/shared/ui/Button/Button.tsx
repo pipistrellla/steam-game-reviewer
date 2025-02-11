@@ -6,7 +6,7 @@ import React, {
     ReactNode,
 } from 'react';
 
-import { Mods, classNames } from 'src/shared/lib/helpers/ClassNames/ClassNames';
+import { Mods, classNames } from '@/shared/lib/helpers/ClassNames/ClassNames';
 
 import cls from './Button.module.scss';
 

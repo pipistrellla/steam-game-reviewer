@@ -1,10 +1,10 @@
 import React, { FC, memo, useCallback } from 'react';
 
-import ThemeIcon from 'src/shared/assets/icons/theme.svg';
-import { LOCAL_STORAGE_THEME_KEY } from 'src/shared/const/localStorage';
-import { classNames } from 'src/shared/lib/helpers/ClassNames/ClassNames';
-import { useTheme } from 'src/shared/lib/hooks/useTheme/useTheme';
-import { Button } from 'src/shared/ui/Button/Button';
+import ThemeIcon from '@/shared/assets/icons/theme.svg';
+import { LOCAL_STORAGE_THEME_KEY } from '@/shared/const/localStorage';
+import { classNames } from '@/shared/lib/helpers/ClassNames/ClassNames';
+import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
+import { Button } from '@/shared/ui/Button/Button';
 
 interface ThemeSwitcherProps {
     className?: string;

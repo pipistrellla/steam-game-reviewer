@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { ThemeContext } from 'src/shared/context/ThemeContext/ThemeContext';
+import { ThemeContext } from '@/shared/context/ThemeContext/ThemeContext';
 
 import { Theme } from '../../../const/theme';
 
