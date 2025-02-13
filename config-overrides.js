@@ -1,3 +1,5 @@
+const path = require("path");
+
 const Dev = require("./config/webpack/DevWebpackSettings");
 const Prod = require("./config/webpack/ProdWebpackSettings");
 
@@ -6,6 +8,13 @@ const Prod = require("./config/webpack/ProdWebpackSettings");
 
 module.exports = function override(config, env) {
   console.log("Current ENV:", env);
+
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        '@': path.resolve(__dirname, '..', '..', 'src'),
+      },
+    }
   if (env === "development") {
     return Dev(config);
   } if (env === "production") {

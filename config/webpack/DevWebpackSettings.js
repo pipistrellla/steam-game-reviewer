@@ -1,5 +1,5 @@
+
 const webpack = require("webpack");
-const path = require("path");
 
 module.exports = function overrideDev(config) {
   console.log("Загружена конфигурация для разработки");
@@ -13,13 +13,6 @@ module.exports = function overrideDev(config) {
     port: config.env?.port || 3000,
     open: true,
   };
-
-  config.resolve = {
-    ...config.resolve,
-    alias: {
-      '@': path.resolve(__dirname, '..', '..', 'src'),
-    },
-  }
 
   config.plugins.push(
     new webpack.DefinePlugin({
