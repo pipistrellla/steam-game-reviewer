@@ -16,7 +16,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = (props) => {
     const [isThemeInited, setThemeInited] = useState(false);
 
     const [theme, setTheme] = useState<Theme>(
-        initialTheme || fallbackTheme || Theme.LIGHT,
+        initialTheme || fallbackTheme || Theme.DARK,
     );
 
     useEffect(() => {

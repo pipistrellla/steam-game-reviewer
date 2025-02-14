@@ -1,19 +1,26 @@
 import React, { FC, memo } from 'react';
 
 import { classNames } from '@/shared/lib/helpers/ClassNames/ClassNames';
+import { Input } from '@/shared/ui/Input';
+import { Modal } from '@/shared/ui/Modal';
 
-import cls from './auth.module.scss';
+import cls from './Auth.module.scss';
 
-interface authProps {
-className?: string;
+interface AuthProps {
+    className?: string;
+    isOpen: boolean;
+    setIsOpen: (isOpen: boolean) => void;
 }
 
-export const auth: FC<authProps> = memo((props) => {
-const { className } = props;
+export const Auth: FC<AuthProps> = memo((props) => {
+    const { className, isOpen, setIsOpen } = props;
 
-return (
-    <div className={classNames(cls.auth, {}, [className])}>
-        123
-    </div>
-);
-})
+    return (
+        <div className={classNames(cls.Auth, {}, [className])}>
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+                <Input label="Логин стима" />
+                <Input label="Пароль" />
+            </Modal>
+        </div>
+    );
+});

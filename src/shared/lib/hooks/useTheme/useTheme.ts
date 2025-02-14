@@ -16,10 +16,10 @@ export function useTheme(): useThemeResult {
         let newTheme: Theme;
         switch (theme) {
             case Theme.DARK:
-                newTheme = Theme.LIGHT;
+                newTheme = Theme.DARK;
                 break;
             case Theme.LIGHT:
-                newTheme = Theme.DARK;
+                newTheme = Theme.LIGHT;
                 break;
             default:
                 newTheme = Theme.DARK;
