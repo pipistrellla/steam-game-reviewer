@@ -8,7 +8,7 @@ module.exports = function overrideDev(config) {
 
     config.devServer = {
         ...config.devServer,
-        port: config.env?.port || 3000,
+        port: config.env?.PORT_FRONTEND || 3000,
         open: true,
     };
 
