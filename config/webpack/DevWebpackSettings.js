@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 
+const isDevValue = process.env.NODE_ENV === 'development';
+
 module.exports = function overrideDev(config) {
     console.log('Загружена конфигурация для разработки');
 
@@ -11,12 +13,15 @@ module.exports = function overrideDev(config) {
         port: config.env?.PORT_FRONTEND || 3000,
         open: true,
     };
+    console.log(isDevValue);
 
     config.plugins.push(
         new webpack.DefinePlugin({
             'process.env.STEAM_API_KEY': JSON.stringify(
                 process.env.STEAM_API_KEY,
             ),
+            __API__: JSON.stringify(process.env.SERVER_URL),
+            __IS_DEV__: JSON.stringify(isDevValue),
         }),
     );
 

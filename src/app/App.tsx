@@ -14,6 +14,7 @@ interface AppProps {}
 const App: FC<AppProps> = () => {
     const { theme } = useTheme();
     const repeatedArray = new Array(5).fill('123');
+
     return (
         <div className={classNames('app', {}, [theme])}>
             <MainLayout
