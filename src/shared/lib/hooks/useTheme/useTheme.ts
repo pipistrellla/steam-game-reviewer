@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { ThemeContext } from 'src/shared/context/ThemeContext/ThemeContext';
+import { ThemeContext } from '@/shared/context/ThemeContext/ThemeContext';
 
 import { Theme } from '../../../const/theme';
 
@@ -16,10 +16,10 @@ export function useTheme(): useThemeResult {
         let newTheme: Theme;
         switch (theme) {
             case Theme.DARK:
-                newTheme = Theme.LIGHT;
+                newTheme = Theme.DARK;
                 break;
             case Theme.LIGHT:
-                newTheme = Theme.DARK;
+                newTheme = Theme.LIGHT;
                 break;
             default:
                 newTheme = Theme.DARK;

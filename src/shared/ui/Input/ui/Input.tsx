@@ -6,7 +6,7 @@ import React, {
     useState,
 } from 'react';
 
-import { classNames, Mods } from 'src/shared/lib/helpers/ClassNames/ClassNames';
+import { classNames, Mods } from '@/shared/lib/helpers/ClassNames/ClassNames';
 
 import cls from './Input.module.scss';
 import { HStack } from '../../Stack';

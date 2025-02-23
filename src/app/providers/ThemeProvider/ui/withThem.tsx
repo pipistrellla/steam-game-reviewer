@@ -1,4 +1,4 @@
-import { Theme } from 'src/shared/const/theme';
+import { Theme } from '@/shared/const/theme';
 
 import { ThemeProvider } from './ThemeProvider';
 

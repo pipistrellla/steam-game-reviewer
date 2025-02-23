@@ -1,6 +1,6 @@
 import React, { DetailedHTMLProps, FC, HTMLAttributes } from 'react';
 
-import { Mods, classNames } from 'src/shared/lib/helpers/ClassNames/ClassNames';
+import { Mods, classNames } from '@/shared/lib/helpers/ClassNames/ClassNames';
 
 import cls from './Flex.module.scss';
 

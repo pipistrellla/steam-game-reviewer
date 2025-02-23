@@ -5,11 +5,7 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: [
-        'plugin:react/recommended',
-        'airbnb',
-        'prettier',
-    ],
+    extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -111,11 +107,10 @@ module.exports = {
             },
         ],
     },
-    globals: {
-        __IS_DEV__: true,
-        __API__: true,
-        __PROJECT__: true,
-    },
+    // globals: {
+    //     __IS_DEV__: readonly,
+    //     __API__: readonly,
+    // },
     overrides: [
         {
             files: ['**/src/**/*.{test,stories}.{ts,tsx}'],

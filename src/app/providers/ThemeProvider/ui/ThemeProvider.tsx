@@ -1,8 +1,8 @@
 import React, { FC, useState, useMemo, useEffect } from 'react';
 
-import { LOCAL_STORAGE_THEME_KEY } from 'src/shared/const/localStorage';
-import { Theme } from 'src/shared/const/theme';
-import { ThemeContext } from 'src/shared/context/ThemeContext/ThemeContext';
+import { LOCAL_STORAGE_THEME_KEY } from '@/shared/const/localStorage';
+import { Theme } from '@/shared/const/theme';
+import { ThemeContext } from '@/shared/context/ThemeContext/ThemeContext';
 
 interface ThemeProviderProps {
     initialTheme?: Theme;
@@ -16,7 +16,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = (props) => {
     const [isThemeInited, setThemeInited] = useState(false);
 
     const [theme, setTheme] = useState<Theme>(
-        initialTheme || fallbackTheme || Theme.LIGHT,
+        initialTheme || fallbackTheme || Theme.DARK,
     );
 
     useEffect(() => {
