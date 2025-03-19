@@ -1,6 +1,6 @@
 import React, { FC, memo, useCallback } from 'react';
 
-import ThemeIcon from '@/shared/assets/icons/theme.svg';
+import ThemeIcon from '@/shared/assets/icon/theme.svg';
 import { LOCAL_STORAGE_THEME_KEY } from '@/shared/const/localStorage';
 import { classNames } from '@/shared/lib/helpers/ClassNames/ClassNames';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
