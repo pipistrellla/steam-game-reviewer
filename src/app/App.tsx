@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import { ThemeSwitcher } from '@/features/ThemeSwitcher';
 import { MainLayout } from '@/shared/layouts/MainLayout';
 import { classNames } from '@/shared/lib/helpers/ClassNames/ClassNames';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
@@ -26,7 +27,7 @@ const App: FC<AppProps> = () => {
                         ))}
                     </HStack>
                 }
-                leftBar={<span>123123123123123</span>}
+                leftBar={<ThemeSwitcher />}
                 rightBar={<span>123123123123123</span>}
             />
         </div>
